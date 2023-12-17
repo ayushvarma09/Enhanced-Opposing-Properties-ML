@@ -15,6 +15,7 @@ print(Path)
 
 # Reading the Elemental property data
 EFD = pd.read_excel(Path+"\Element_Features_Data.xlsx")
+#F:\Projects\Main\Enhanced-Opposing-Properties-ML\Composition_Properties_Data.xlsx
 # print(EFD)
 # print(type(EFD))
 npEFD = (EFD.to_numpy())
@@ -101,7 +102,7 @@ for i in range(138):
 plt.matshow(r)
 plt.colorbar()
 # # plt.savefig('CorrelationMatrix-20230209-1904.png', dpi = 3000)
-# plt.show()
+plt.show()
 
 # Performing Screening Correlation
 accountedfor = set()
